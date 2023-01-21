@@ -1,0 +1,35 @@
+import React from "react";
+import styles from "./auth.module.scss";
+import regImg from "../../assets/register.png";
+import Card from "../../components/card/Card";
+import { Link } from "react-router-dom";
+
+const Register = () => {
+  return (
+    <section className={`container ${styles.auth}`}>
+      <Card>
+        <div className={styles.form}>
+          <h2>Register</h2>
+
+          <form action="">
+            <input type="text" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+            <button className="--btn --btn-primary --btn-block">
+              Register
+            </button>
+          </form>
+          <span className={styles.register}>
+            <p>Already have a account? &nbsp;</p>
+            <Link to="/login">Login</Link>
+          </span>
+        </div>
+      </Card>
+      <div className={styles.img}>
+        <img src={regImg} width="400px" alt="Login" />
+      </div>
+    </section>
+  );
+};
+
+export default Register;
