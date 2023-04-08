@@ -4,7 +4,7 @@ import styles from "./Home.module.scss";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Home Hello</h1>
     </div>
   );
 };
